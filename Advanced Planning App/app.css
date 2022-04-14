@@ -1,0 +1,230 @@
+body{
+    background: rgb(181,110,207);
+background: linear-gradient(90deg, rgba(181,110,207,1) 0%, rgba(68,219,255,1) 50%, rgba(255,239,145,1) 100%);
+}
+
+.containall{
+    width: 100%;
+    height: 100vh;
+    background-image: url("mac.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#firstsec{
+    background-color: rgb(128, 179, 225);
+    width: 1206px;
+    position: absolute;
+    top: 59.3px;
+    left:356.495px;
+    border-radius: 15px 15px 0px 0px;
+    height: 40px;
+}
+
+
+#firstsecfa{
+    color: rgb(255, 255, 255);
+    padding:10px 10px;
+}
+
+#firstsecfa:hover {
+    background-color: rgb(95, 142, 186);
+    border-radius: 15px;
+    border: 1px solid white;
+    border-color: transparent;
+}
+
+#sidebar{
+    background-color: rgb(196, 221, 255);
+    height:76.23vh;
+    width: 8%;
+    padding-top: 40px;
+    padding-left: 10px;
+    position: absolute;
+    left:356px;
+    top: 99px;
+    z-index: 10000;
+    border-radius:0px 0px 0px 10px;
+    display: none;
+}
+
+#inlinediv:hover{
+    background-color: rgb(222, 222, 222);
+}
+
+#inlinediv{
+   margin-bottom: 10px;
+}
+
+#firstspansec{
+    font-weight:500;
+    font-size:17px; 
+    margin-left:7px;
+    color:rgb(14, 14, 14);
+}
+
+
+
+#firstseca{
+    text-decoration: none;
+}
+
+#navbarbtn{
+    border: 0;
+    background-color: rgb(128, 179, 225);
+}
+
+#navbarbtnclose{
+    border: 0;
+    background-color: rgb(128, 179, 225);
+    display: none;
+}
+
+.tasksection{
+    height:50vh;
+}
+
+#notaskdiv{
+    height:245px;
+    width: 50%;
+    margin-left: 340px;
+    margin-top: 120px;
+}
+
+.pic1{
+    height:185px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("img.jpg");
+    border-radius: 10px; 
+    display: inline;
+}
+
+#addtask{
+    color:black; 
+    text-decoration:none;
+    background-color:transparent;
+    border: 0;
+    position:absolute;
+    left:47%;
+    top:40vh
+}
+
+#plusiconaddtask{
+    color:aquamarine;
+    font-size: 85px;
+
+ }
+
+#plusiconaddtask:hover{
+   color:palevioletred;
+   transform: rotate(360deg);
+   transition: 0.7s;
+}
+
+#spanaddtask:focus{
+    color:palevioletred;
+}
+
+#tasksec{
+    border: 1px solid black;
+    width: 800px;
+    height:200px;
+    max-height: 800px;
+    position: absolute;
+    left:28%;
+    display: none;
+    top: 58%;
+    border-color:rgb(23, 115, 196);
+    border-radius:10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(94,136,168,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(94,136,168,1);
+    box-shadow: 10px 10px 5px 0px rgba(94,136,168,1);
+}
+
+#taskarea{
+    height: 200px;
+    width:800px;
+    border-radius:10px;
+    border: none;
+    resize: none;
+    padding:15px
+}   
+
+#planeiconaddtask{
+  z-index: 10001;
+  display: none;
+  position: absolute;
+  left:48.5%;
+  top: 53%;
+  color:aquamarine;
+  cursor:pointer;
+  transform: rotate(330deg);
+}
+
+.planeiconanimation{
+    animation-name: plane;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+@keyframes plane {
+
+    0%   { left: 48.5%;  top: 53%;}
+
+    100% {color:red; left: 48.5%; top:42%;}
+
+  }
+  
+
+#tasks{
+    display: none;
+    width: 650px;
+    height: 250px;
+    overflow: auto;
+    border:1px solid rgb(86, 89, 255);
+    padding: 0px 10px;
+    position: absolute;
+    top: 15%;
+    left:610px;
+    border-radius:15px
+}
+
+
+.p-style{
+    font-size:20px;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    
+}
+
+#pendingbox{
+    width:280px;
+    height:40px;
+    border:1px solid rgb(251, 7, 7);
+    position:sticky;
+    top:190px;
+    left: 350px;
+    padding:5px;
+    display:none;
+    border-radius: 35px;
+}
+
+#trashpendingsbutton{
+    background-color: transparent;
+    border: 0;
+}
+
+#currentDate{
+    font-size: 20px;
+    border:0;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    position: absolute;
+    left:1430px;
+    bottom: 150px;
+}
